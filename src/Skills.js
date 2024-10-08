@@ -7,7 +7,7 @@ class Work extends Component {
         <div class="skills">
             <div class="title"><strong><em>Key Skills</em></strong></div>
             <div class="key">
-                <p>A Key Skill<br/>A Key Skill<br/> A Key Skill</p>
+                <p>{this.props.keySkills.skills}</p>
                 <p>A Key Skill<br/> A Key Skill<br/> A Key Skill</p>
                 <p>A Key Skill<br/> A Key Skill<br/> A Key Skill</p>
             </div>

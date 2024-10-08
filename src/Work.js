@@ -7,16 +7,10 @@ class Work extends Component {
         <div class="work">
             <div class="title"><strong><em>Work Experience</em></strong></div>
             <div class="summary">
-                <h3>Job Title at Company (August 2022 – December 2023)</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.</p>
-                <h3>Job Title 2 at Company 2 (August 2020 – December 2021)</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>{this.props.workInfo.jobOneTitle}</h3>
+                <p>{this.props.workInfo.jobInfo}</p>
+                <h3>{this.props.workInfo.jobTwoTitle}</h3>
+                <p>{this.props.workInfo.jobInfo}</p>
             </div>
         </div>
         <hr />

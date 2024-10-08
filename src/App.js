@@ -12,14 +12,28 @@ class App extends Component {
     this.state = {
       personInfo: {
         name: "Ayoub Rached",
-        occupation: "Software Engineer"
+        occupation: "Software Engineer",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris\
+                nisi ut aliquip ex ea commodo consequat."
       },
       contactInfo: {
         email: "ar333@njit.edu",
         web: "abc.github.io/ar333",
         mobile: "01234567890"
+      },
+      workInfo: {
+        jobOneTitle: "Job Title at Company (August 2022 – December 2023)",
+        jobTwoTitle: "Job Title 2 at Company 2 (August 2020 – December 2021)",
+        jobInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris\
+                    nisi ut aliquip ex ea commodo consequat."
+      },
+      keySkills: {
+        skills: `A Key Skill<br/>A Key Skill<br/> A Key Skill`
       }
-
     };
   }
   
@@ -27,9 +41,9 @@ class App extends Component {
     return (
       <div class="container">
         <Header personInfo={this.state.personInfo} contactInfo={this.state.contactInfo}></Header>
-        <Profile></Profile>
-        <Work></Work>
-        <Skills></Skills>
+        <Profile personInfo={this.state.personInfo}></Profile>
+        <Work workInfo={this.state.workInfo}></Work>
+        <Skills keySkills={this.state.keySkills}></Skills>
         <Education></Education>
       </div>
     )
