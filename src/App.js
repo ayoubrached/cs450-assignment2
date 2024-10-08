@@ -33,6 +33,15 @@ class App extends Component {
       },
       keySkills: {
         skills: `A Key Skill<br/>A Key Skill<br/> A Key Skill`
+      },
+      educationInfo: {
+        school: "New Jersey Institute of Technology",
+        bachelors: "BS in Computer Science<br/>\
+                        2018 - 2022<br/>\
+                        GPA: 3.9",
+        masters: "MS in Data Science<br/>\
+                        2022 - 2023<br/>\
+                        GPA: 4.0"
       }
     };
   }
@@ -44,7 +53,7 @@ class App extends Component {
         <Profile personInfo={this.state.personInfo}></Profile>
         <Work workInfo={this.state.workInfo}></Work>
         <Skills keySkills={this.state.keySkills}></Skills>
-        <Education></Education>
+        <Education educationInfo={this.state.educationInfo}></Education>
       </div>
     )
   }

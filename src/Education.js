@@ -8,13 +8,9 @@ class Education extends Component {
             <div class="title"><strong><em>Education</em></strong></div>
             <div class="summary">
                 <h3>New Jersey Institute of Technology</h3>
-                    <p>BS in Computer Science<br/>
-                        2018 - 2022<br/>
-                        GPA: 3.9</p>
+                  <p dangerouslySetInnerHTML={{ __html: this.props.educationInfo.bachelors }} />
                     <h3>New Jersey Institute of Technology</h3>
-                    <p>MS in Data Science<br/>
-                        2022 - 2023<br/>
-                        GPA: 4.0</p>
+                    <p dangerouslySetInnerHTML={{ __html: this.props.educationInfo.masters }} />
             </div>
         </div>
       </div>

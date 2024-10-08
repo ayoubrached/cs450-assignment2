@@ -5,7 +5,7 @@ class Profile extends Component {
     return (
       <div>
         <div class="personal">
-            <div class="title"><strong><em>Bruh Profile</em></strong></div>
+            <div class="title"><strong><em>Personal Profile</em></strong></div>
             <div class="summary">{this.props.personInfo.summary}</div>
         </div>
         <hr/>
